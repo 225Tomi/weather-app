@@ -1,4 +1,5 @@
-let url = 'http://localhost:3000/weather?city='
+//let url = 'http://localhost:3000/weather?city='
+let url = '/weather?city='
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#pLocation')

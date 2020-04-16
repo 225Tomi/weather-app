@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 const hbs = require('hbs')
 const app = express()
+const port = process.env.PORT || 3000
 //Define Paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -86,6 +87,6 @@ app.get('*', (req,res)=>{
         headerText: 'Article not found'
     })
 })
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
     console.log("The server did start correctly")
 })
